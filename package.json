@@ -1,9 +1,12 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
+  "homepage": "https://tmerritt56.github.io/react-gh-pages",
   "proxy": "http://localhost:3001/",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -12,12 +15,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "4.0.2",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^6.4.3",
+    "react-scripts": "4.0.2",
     "react-vertical-timeline-component": "^3.5.2"
   },
   "browserslist": {
@@ -31,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
