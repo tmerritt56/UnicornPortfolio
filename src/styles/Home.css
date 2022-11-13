@@ -1,0 +1,67 @@
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(250, 235, 255);
+}
+
+.about {
+    width: 100%;
+    height: calc(100vh -100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(49, 34, 68);
+    color: rgb(250, 235, 255);
+}
+.about .prompt {
+    width: 100%;
+    font-size: 30px
+}
+.info {
+    color:rgb(250, 235, 255);
+}
+.skills {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(39, 38, 64);
+}
+  
+  .indvitem h2{
+    color: rgb(49, 34, 68);
+    width: 100%;
+  }
+  
+  .indvitem span {
+    color: rgb(62, 31, 71);
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about h2 {
+      font-size: 40px;
+    }
+  
+    .about .prompt {
+      margin-top: 10px;
+      font-size: 20px;
+      width: 80%;
+    }
+  
+    .skills {
+      text-align: center;
+    }
+    .list {
+      padding: 0;
+    }
+  
+    .skills h2 {
+      font-size: 30px;
+    }
+  }

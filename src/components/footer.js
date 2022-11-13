@@ -1,16 +1,14 @@
 import React from 'react';
+import GitHubIcon from "@material-ui/icons/GitHub";
+import '../styles/Footer.css';
 
 function Footer(){
     return (
         <div className='footer' id='footer'>
-            <a href='https://github.com/tmerritt56'>
-                <img
-                src='https://img.icons8.com/color/48/000000/github.png'
-                alt='Github'
-                className='icon'
-                />
-            </a>
-        </div>
+            <div>
+                 <GitHubIcon />
+                </div>
+            </div>
     )
 };
 export default Footer; 
