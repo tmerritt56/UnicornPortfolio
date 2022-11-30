@@ -1,17 +1,14 @@
-import React from 'react'
-import {useParams} from "react-router-dom";
-import { ProjectList } from '../helpers/ProjectList';
-import '../styles/ProjectDis.css';
+import React from 'react';
+import {Link, useParams} from 'react-router-dom';
+import {ProjectList} from '../helpers/ProjectList';
+
 
 function ProjectDis() {
-    const {id}=useParams
-    const project = ProjectList[id];
+  const {id} = useParams();
+  const project = ProjectList[id];
   return (
-    <div className='project'>
-    <h1>{project.name}</h1>
+    <div>Deployed Link:{project.Deployed}
     <img src={project.image}/>
-    <link href={project.Github}/>
-    <link href={project.Deployed}/>
     </div>
   )
 }
